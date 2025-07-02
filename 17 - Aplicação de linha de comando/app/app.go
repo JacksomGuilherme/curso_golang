@@ -31,7 +31,7 @@ func Gerar() *cli.App {
 		},
 		{
 			Name:   "servers",
-			Usage:  "Busca o nome do servidor na internet",
+			Usage:  "Busca o nome do servidor na internet teste altearação",
 			Flags:  flags,
 			Action: buscarServidores,
 		},
