@@ -1,0 +1,11 @@
+{
+    "nome": "Jacksom Guilherme",
+    "idade": 26,
+    "cursos": [
+        {
+            "nome": "Análise e desenvolvimento de sistemas",
+            "instituicao": "Faculdade de Tecnologia",
+            "campus": "Zona Leste"
+        }
+    ]
+}
