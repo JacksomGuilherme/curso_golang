@@ -18,9 +18,9 @@ func main() {
 			"ultimo":   "Santos",
 		},
 		"endereco": {
-			"logradouro": "Lebon Régis",
-			"numero":     "150",
-			"bairro":     "Vila Brasil",
+			"logradouro": "Rua Número Zero",
+			"numero":     "99",
+			"bairro":     "Itaquera",
 		},
 	}
 
