@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso de Golang</title>
+    <style>
+        header {
+            background-color: #007acc;
+            color: #fff;
+            padding: 1.5rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .usuario-logado {
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+
+        header {
+            background-color: #007acc;
+            color: #fff;
+            padding: 1.5rem 0;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero */
+
+        .hero {
+            background: linear-gradient(to right, #007acc, #00bfff);
+            color: #fff;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background: #fff;
+            color: #007acc;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #e6e6e6;
+        }
+
+        /* Seção Sobre */
+
+        .sobre {
+            padding: 3rem 0;
+            background: #fff;
+            text-align: center;
+        }
+
+        .sobre h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <h1>Curso de Golang</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Conteúdo</a></li>
+                    <li><a href="#">Instrutor</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="usuario-logado">
+                Olá, <strong>{{.NomeUsuario}}</strong>
+                <!-- Referência o cammpo Nome vindo do struct de usuários enviado pelo go -->
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Aprenda Golang do zero ao avançado</h2>
+            <p>Explore a linguagem criada pelo Google, dominando o backend com performance e simplicidade.</p>
+            <a id="botao" href="#" class="btn">Comece Agora</a>
+        </div>
+    </section>
+
+    <section class="sobre">
+        <div class="container">
+            <h3>Por que aprender Go?</h3>
+            <p>
+                Go é uma linguagem moderna, eficiente e concisa, ideal para aplicações web, microserviços e sistemas
+                escaláveis.
+                Nosso curso aborda desde a sintaxe básica até a construção de APIs robustas com Go.
+            </p>
+            <img src="https://miro.medium.com/v2/resize:fit:600/1*i2skbfmDsHayHhqPfwt6pA.png" alt="GoLang">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Curso de Golang. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        var botao = document.getElementById("botao")
+
+        botao.onclick = function(){
+            window.open("https://www.udemy.com/share/103yNu3@jctnMR4qEyNkSSaVbVpQj5yLVo7o8CvevFJSDx0XJL5r-IEu-2sgX6Qve322EhvT/")
+        }
+    </script>
+
+</body>
+
+</html>
